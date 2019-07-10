@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bartosz Pracz- portfolio</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/min.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+
+
+<body class="bodyHidden">
+    <section id="mainContent" class="container parallax">
+        <header>
+            <div class="button visible" id="menuM" align="right"><i class="fa fa-2x fa-bars icon"></i></div>
+            <div class="button" id="closeM" align="right"><i class="fa fa-2x fa-close icon"></i></div>
+            <nav>
+                <ul class="menu anim o0" align="right">
+                    <li class="entry anim o1" id="main" onclick="directScroll(mainContent)">
+                        Główna
+                    </li>
+                    <li class="entry anim o2" id="about" onclick="directScroll(aboutContent)">
+                        O mnie
+                    </li>
+                    <li class="entry anim o3" id="skills" onclick="directScroll(skillsContent)">
+                        Umiejętności
+                    </li>
+                    <li class="entry anim o4" id="projects" onclick="directScroll(projectsContent)">
+                        Projekty
+                    </li>
+                    <li class="entry anim o5" id="contact" onclick="directScroll(contactContent)">
+                        Kontakt
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="blank">
+            <div class="tray">
+                <div class="name">Bartosz <span>Pracz</span></div>
+                <div class="afterfix">Junior frontEnd developer</div>
+            </div>
+            <div class="socials">
+                <a href="http://fb.com/bartosz.pracz.5" target="_blank"><i class="fa fa-2x fa-facebook-square icon"></i></a>
+                <a href="https://github.com/bartoszp1992" target="_blank"><i class="fa fa-2x fa-github-square icon"></i></a>
+            </div>
+        </div>
+
+    </section>
+    <div style="clear: both;"></div>
+    <section id="aboutContent" class="container2">
+        <div class="headerSmall">
+            <h3>O mnie</h3>
+        </div>
+        <div class="left">
+            <a>
+                <img class="image h hidden" src="imgs/ja.jpg" alt="pszczola"></img>
+            </a>
+        </div>
+        <div class="center"></div>
+        <div class="right">
+            <article class="h hidden">
+                Moja styczność z kodowaniem rozpoczęła się przy elektronice- mikrokontrolerach AVR. Proste programy pisane w języku C, które sterowały budowanymi układami. Z czasem zainteresowałem się frontEndem. Poza informatyką interesuję się także fotografią, motoryzacją i elektroniką, zaś w wolnych chwilach oddaję się największej pasji- jeździe motocyklem</article>
+        </div>
+    </section>
+
+    <section id="skillsContent" class="container3 parallax">
+        <div class="headerSmall">
+            <h3>Umiejętności</h3>
+        </div>
+        <ul class="wall">
+            <li id="m1" class="miniature h hidden"><img src="imgs/skills/html.png"></img><span>HTML5</span></li>
+            <li id="m2" class="miniature h hidden"><img src="imgs/skills/css.png"></img><span>CSS3</span></li>
+            <li id="m3" class="miniature h hidden"><img src="imgs/skills/rwd.png"></img><span>RWD</span></li>
+            <li id="m2" class="miniature h hidden"><img src="imgs/skills/js.png"></img><span>JavaScript</span></li>
+            <li id="m4" class="miniature h hidden"><img src="imgs/skills/jq.png"></img><span>jQuery</span></li>
+            <li id="m4" class="miniature h hidden"><img src="imgs/skills/git.png"></img><span>GIT</span></li>
+            <li id="m4" class="miniature h hidden"><img src="imgs/skills/gimp.png"></img><span>GIMP</span></li>
+            <li id="m4" class="miniature h hidden"><img src="imgs/skills/linux.png"></img><span>Linux</span></li>
+
+        </ul>
+    </section>
+
+    <section id="projectsContent" class="container4 parallax">
+        <div class="headerSmall">
+            <h3>Projekty</h3>
+        </div>
+        <ul class="wall fullWall">
+            <li id="m1" class="projectMiniature h hidden">
+                    <div class="overlay">
+                        <img src="imgs/projects/photo.png">
+                        <div class="mask">Fotografia
+                            <div class="submask">
+                               <a href="http://bartoszp1992.github.io/Photo" target="_blank"> DEMO </a>
+                            </div>
+                            <div class="submask">
+                                <a href="https://github.com/bartoszp1992/Photo" target="_blank"> ŹRÓDŁO</a>
+                            </div>
+                        </div>
+                        </img>
+                    </div>
+            </li>
+            
+            <li id="m1" class="projectMiniature h hidden">
+                    <div class="overlay">
+                        <img src="imgs/projects/portfolio.png">
+                        <div class="mask">Portfolio
+                            <div class="submask">
+                               <a href="http://bartoszp1992.github.io/portfolio" target="_blank"> DEMO </a>
+                            </div>
+                            <div class="submask">
+                                <a href="https://github.com/bartoszp1992/portfolio" target="_blank"> ŹRÓDŁO</a>
+                            </div>
+                        </div>
+                        </img>
+                    </div>
+            </li>
+
+        </ul>
+    </section>
+
+    <section id="contactContent" class="container2">
+        <div class="headerSmall">
+            <h3>Kontakt</h3>
+        </div>
+        <div class="contactEntry h hidden">
+            <span>Telefon:</span> 731 934 121
+        </div>
+        <div class="contactEntry h hidden">
+            <span>email:</span> bartoszp1992@gmail.com
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2017 Bartosz P
+    </footer>
+
+    <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

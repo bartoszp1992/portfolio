@@ -1,0 +1,429 @@
+@import "_settings";
+
+html{
+    height:100%;
+}
+
+body
+{
+    width: auto;
+    height: 100%;
+    
+    font-family: 'Lato', sans-serif;
+    margin:0 !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.bodyHidden
+{
+    background-color: $main-gray;
+    transform: scale(0.8);
+    opacity: 0;
+    
+}
+
+.icon
+{
+    color: white;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.escape
+{
+    transform: rotateY(90deg) skewX(10deg) rotateZ(10deg);
+    transform-origin: -50% 50%;
+    opacity: 0;
+}
+
+.container
+{
+    height: 100%;
+    background-image: url("../imgs/bcg.jpg");
+    background-position: top 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+header
+{
+    height: 42px;
+    position: fixed;
+    width: 100%;
+    padding: 5px;
+    z-index: 100;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu
+{
+    float: left;
+    width: 60%;
+    height: 100%;
+    text-align: right;
+    
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    
+    z-index: 100;
+    display: block;
+    
+    list-style: none;
+    
+    transition: all 0.2s ease-in-out;
+}
+
+.button
+{
+    display: none;
+}
+
+.verticalMenu
+{
+    display: none;
+    float: left;
+}
+
+.entry
+{
+    display: block;
+    padding-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12px;
+    float: left;
+    color: black;
+    width: 18%;
+    border-right: 2px dashed $main-blue;
+    
+    transition: color .2s ease-in-out;
+}
+
+nav ul li:first-child
+{
+    border-left: 2px dashed $main-blue;
+}
+
+.entry:hover
+{
+
+    cursor:pointer;
+    color: $main-blue;
+}
+
+#text
+{
+    padding: 2px;
+}
+
+.blank
+{
+    clear:both;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.left
+{
+    width: 45%;
+    float: left;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+        
+}
+
+.right
+{
+    width: 45%;
+    float: right;
+    font-size: 18px;
+    text-align: justify;
+    
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+}
+
+.container2
+{
+    overflow: hidden;
+    background-color: whitesmoke;
+    
+}
+
+.container3
+{
+    background-image: url("../imgs/cube.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-content: center; 
+}
+
+.container4
+{
+    background-image: url("../imgs/solved.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-content: center;
+}
+
+.filled
+{
+    background-color: $main-gray;
+    box-shadow: 0 5px 5px #888888;
+}
+
+.filledOnDrawer
+{
+    background-color: $main-gray;
+    box-shadow: 0 5px 5px #888888;
+}
+
+.tray
+{
+    
+    position: absolute;
+    top: 40%;
+    
+    color: white;
+}
+
+.name
+{
+    padding-left: 20px;
+    font-size: 25px;
+}
+
+.name span
+{
+    color: $main-blue;
+}
+
+.afterfix
+{
+    padding-left: 20px;
+}
+
+.headerSmall
+{
+    font-size: 32px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: $main-blue;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.headerSmall h3
+{
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+}
+
+.image
+{
+    box-shadow: 10px 10px 20px #888888;
+    height: 250px;
+    width: 350px;
+    transition: all 0.2s ease-in-out;
+    z-index: 10;
+    
+}
+
+.wall
+{
+    padding-left: 40%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    height: 70%;
+    width: 55%;
+    margin: 0;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.fullWall
+{
+    padding-left: 0;
+    padding-bottom: 100px;
+    width: 100%;
+    justify-content: center;
+}
+
+li span
+{
+    display: block;
+    text-align: center;
+    color: white;
+}
+
+.miniature
+{
+    width: 180px;
+    height: 180px;
+    position: relative;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 0;
+    z-index: 1;
+}
+
+
+.miniature:hover
+{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px #000000;
+    perspective: 1000px;
+}
+
+.projectMiniature
+{
+    width: 340px;
+    height: 150px;
+    position: relative;
+    top: 0;
+    margin: 30px;
+    padding: 0;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 10px 10px 20px black;
+    z-index: 1;
+}
+
+.overlay
+{
+    position: relative;
+    bottom: 0;
+    height: 100%;
+    width: 340px;
+    background-color: aqua;
+}
+
+.overlay img
+{
+    height: 150px;
+    width: 340px;
+}
+
+.mask
+{
+    position: absolute;
+    bottom: 0;
+    float: left;
+    font-size: 20px;
+    width: 100%;
+    height: 30px;
+    color: white;
+    margin: 0;
+    background-color: black;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.submask
+{
+    float: right;
+    text-decoration: underline;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+}
+
+.submask a
+{
+    color: white;
+}
+
+.overlay:hover div
+{
+    opacity: 0.8;
+}
+
+
+
+.miniature img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.projectMiniature img
+{
+    width: 100%;
+    height: 100%;
+}
+
+footer
+{
+    text-align: center;
+    height: 30px;
+    background-color: black;
+    color: white;
+    padding-top: 2px;
+    font-size: 20px;
+}
+
+.socials
+{
+    text-align: right;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    height: 30px;
+    width: 120px;
+    padding-bottom: 10px;
+}
+
+.socials i
+{
+    cursor: pointer;
+    float: right;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.contactEntry
+{
+    font-size: 25px;
+    color: black;
+    padding-left: 10%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    text-align: justify;
+    transition: all 0.2s ease-in-out;
+}
+
+.contactEntry span
+{
+    font-weight: 700;
+}
+
+.hidden
+{
+    transform: translateY(30px);
+    opacity: 0;
+}
